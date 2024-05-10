@@ -28,14 +28,6 @@
         </configuration>
       </plugin>
       <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.10.1</version>
-        <configuration>
-          <source>11</source>
-          <target>11</target>
-        </configuration>
-      </plugin>
-      <plugin>
         <groupId>org.moditect</groupId>
         <artifactId>moditect-maven-plugin</artifactId>
         <version>1.0.0.RC2</version>
@@ -47,7 +39,7 @@
               <goal>add-module-info</goal>
             </goals>
             <configuration>
-              <outputDirectory>${project.build.directory}/</outputDirectory>
+              <outputDirectory>${project.build.directory}</outputDirectory>
               <overwriteExistingFiles>true</overwriteExistingFiles>
               <modules>
                 <module>
@@ -63,6 +55,9 @@
                                         exports com.badlogic.gdx.graphics;
                                         exports com.badlogic.gdx.backends.lwjgl3;
                                         exports com.badlogic.gdx.graphics.glutils;
+                                        exports com.badlogic.gdx.graphics.g2d;
+                                        exports com.badlogic.gdx.files;
+                                        exports com.badlogic.gdx.scenes.scene2d;
                                         }</moduleInfoSource>
                 </module>
               </modules>
@@ -82,7 +77,7 @@
     <repository>
       <id>github</id>
       <name>GitHub sweat-tek Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/sweat-tek/ShadedLibGDX</url>
+      <url>https://maven.pkg.github.com/danngo51/ShadedLibGDX</url>
     </repository>
   </distributionManagement>
   <properties>
