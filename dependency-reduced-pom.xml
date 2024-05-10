@@ -49,16 +49,23 @@
                     <version>1.0.1-SNAPSHOT</version>
                   </artifact>
                   <moduleInfoSource>module com.badlogic.gdx {
-                                        requires java.desktop;
-                                        requires jdk.unsupported;
-                                        exports com.badlogic.gdx;
-                                        exports com.badlogic.gdx.graphics;
-                                        exports com.badlogic.gdx.backends.lwjgl3;
-                                        exports com.badlogic.gdx.graphics.glutils;
-                                        exports com.badlogic.gdx.graphics.g2d;
-                                        exports com.badlogic.gdx.files;
-                                        exports com.badlogic.gdx.scenes.scene2d;
-                                        }</moduleInfoSource>
+                    requires java.desktop;
+                    requires jdk.unsupported;
+                    exports com.badlogic.gdx;
+                    exports com.badlogic.gdx.graphics;
+                    exports com.badlogic.gdx.backends.lwjgl3;
+                    exports com.badlogic.gdx.graphics.glutils;
+                    exports com.badlogic.gdx.graphics.g2d;
+                    exports com.badlogic.gdx.files;
+                    exports com.badlogic.gdx.scenes.scene2d;
+                    exports com.badlogic.gdx.ScreenAdapter;
+                    exports com.badlogic.gdx.graphics.OrthographicCamera;
+                    exports com.badlogic.gdx.graphics.g2d.SpriteBatch;
+                    exports com.badlogic.gdx.math.Vector2;
+                    exports com.badlogic.gdx.physics.box2d.Box2DDebugRenderer;
+                    exports com.badlogic.gdx.physics.box2d.World;
+
+                    }</moduleInfoSource>
                 </module>
               </modules>
             </configuration>
