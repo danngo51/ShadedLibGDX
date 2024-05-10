@@ -73,6 +73,26 @@
             <classifier>natives-desktop</classifier>
             <version>${libGDX.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.badlogicgames.gdx</groupId>
+            <artifactId>gdx</artifactId>
+            <version>${libGDX.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.badlogicgames.gdx</groupId>
+            <artifactId>gdx-backend-lwjgl3</artifactId>
+            <version>${libGDX.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.badlogicgames.box2dlights</groupId>
+            <artifactId>box2dlights</artifactId>
+            <version>1.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.badlogicgames.gdx</groupId>
+            <artifactId>gdx-openal</artifactId>
+            <version>0.9.9</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>                                           
@@ -123,7 +143,7 @@
                             <modules>
                                 <module>
                                     <artifact>
-                                        <groupId>dk.sdu.mmmi.cbse</groupId>
+                                        <groupId>dk.sdu.sesp.geight</groupId>
                                         <artifactId>shadedlibgdx</artifactId>
                                         <version>1.0.1-SNAPSHOT</version>
                                     </artifact>
@@ -138,6 +158,12 @@
                                         exports com.badlogic.gdx.graphics.g2d;
                                         exports com.badlogic.gdx.files;
                                         exports com.badlogic.gdx.scenes.scene2d;
+                                        exports com.badlogic.gdx.ScreenAdapter;
+                                        exports com.badlogic.gdx.graphics.OrthographicCamera;
+                                        exports com.badlogic.gdx.graphics.g2d.SpriteBatch;
+                                        exports com.badlogic.gdx.math.Vector2;
+                                        exports com.badlogic.gdx.physics.box2d.Box2DDebugRenderer;
+                                        exports com.badlogic.gdx.physics.box2d.World;
                                         }
                                     </moduleInfoSource>
                                 </module>
